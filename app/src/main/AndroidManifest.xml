@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.ViewModelSumarActivity" />
-        <activity android:name=".ui.ViewModelUserActivity"></activity>
+        <activity android:name=".ui.ViewModelUserActivity" />
+        <activity android:name=".ui.LiveDataActivity"></activity>
     </application>
 
 </manifest>

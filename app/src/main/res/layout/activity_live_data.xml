@@ -5,23 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.androiddesdecero.viewmodellivedata.ui.MainActivity">
+    tools:context="com.androiddesdecero.viewmodellivedata.ui.LiveDataActivity">
 
     <Button
-        android:text="View Model Sumar Activity"
-        android:id="@+id/mainActivityBtViewModelSumar"
+        android:text="Salvar"
+        android:id="@+id/liveDataBtSalvar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-    <Button
-        android:text="View Model User Activity"
-        android:id="@+id/mainActivityBtViewModelUser"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <Button
-        android:text="Live Data Activity"
-        android:id="@+id/mainActivityBtLiveData"
+    <TextView
+        android:id="@+id/liveDataTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 

@@ -1,5 +1,6 @@
 package com.androiddesdecero.viewmodellivedata.ui;
 
+import android.arch.lifecycle.LiveData;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,7 +11,7 @@ import com.androiddesdecero.viewmodellivedata.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btViewModelSumarActivity, btViewModelUserActivity;
+    private Button btViewModelSumarActivity, btViewModelUserActivity, btLiveDataActivity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +35,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(), ViewModelUserActivity.class));
+            }
+        });
+        btLiveDataActivity = findViewById(R.id.mainActivityBtLiveData);
+        btLiveDataActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), LiveDataActivity.class));
             }
         });
     }
