@@ -10,7 +10,7 @@ import com.androiddesdecero.viewmodellivedata.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btViewModelSumarActivity;
+    private Button btViewModelSumarActivity, btViewModelUserActivity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +26,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(), ViewModelSumarActivity.class));
+            }
+        });
+
+        btViewModelUserActivity = findViewById(R.id.mainActivityBtViewModelUser);
+        btViewModelUserActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), ViewModelUserActivity.class));
             }
         });
     }

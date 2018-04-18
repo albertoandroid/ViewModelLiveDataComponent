@@ -16,7 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.ViewModelSumarActivity"></activity>
+        <activity android:name=".ui.ViewModelSumarActivity" />
+        <activity android:name=".ui.ViewModelUserActivity"></activity>
     </application>
 
 </manifest>
